@@ -79,6 +79,7 @@ public class FileManager {
     private JButton deleteFile;
     private JButton newFile;
     private JButton copyFile;
+    private JButton newAboutBtm;
     private JButton exitBtn = new JButton("Exit app");
     private JLabel fileName;
     private JTextField path;
@@ -161,11 +162,11 @@ public class FileManager {
             // as per trashgod tip
             tree.setVisibleRowCount(15);
 
-            Dimension preferredSize = treeScroll.getPreferredSize();
+/*            Dimension preferredSize = treeScroll.getPreferredSize();
             Dimension widePreferred = new Dimension(
                 200,
                 (int)preferredSize.getHeight());
-            treeScroll.setPreferredSize( widePreferred );
+            treeScroll.setPreferredSize( widePreferred );*/
 
             // details for a File
             JPanel fileMainDetails = new JPanel(new BorderLayout(4,2));
@@ -198,7 +199,7 @@ public class FileManager {
             flags.add(isDirectory);
 
             isFile.setEnabled(false);
-            flags.add(isFile)
+            flags.add(isFile);
             fileDetailsValues.add(flags);
 
             int count = fileDetailsLabels.getComponentCount();
@@ -363,7 +364,6 @@ public class FileManager {
                 return treePath;
             }
         }
-        // not found!
         return null;
     }
 
@@ -726,9 +726,8 @@ public class FileManager {
 
                 f.pack();
                 f.setLocationByPlatform(true);
-                f.setMinimumSize(f.getSize());
+                f.setExtendedState(JFrame.MAXIMIZED_BOTH);
                 f.setVisible(true);
-
                 fileManager.showRootFile();
             }
         });
