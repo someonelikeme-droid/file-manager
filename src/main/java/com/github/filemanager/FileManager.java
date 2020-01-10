@@ -79,6 +79,7 @@ public class FileManager {
     private JButton deleteFile;
     private JButton newFile;
     private JButton copyFile;
+    private JButton newAboutBtm;
     private JButton exitBtn = new JButton("Exit app");
     private JLabel fileName;
     private JTextField path;
