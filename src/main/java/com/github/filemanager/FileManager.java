@@ -56,8 +56,8 @@ Includes support classes FileTableModel &amp; FileTreeCellRenderer.
  TODO UI
  Create new UI window (about:app)
 
-@author Andrew Thompson
-@version 2011-06-01
+@author Andrew Thompson && macfan
+@version 2011-06-01 onwards
 */
 public class FileManager {
     public static final String APP_TITLE = "FileMan || Modified by macfan";
