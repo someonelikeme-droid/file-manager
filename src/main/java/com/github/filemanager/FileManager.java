@@ -364,7 +364,6 @@ public class FileManager {
                 return treePath;
             }
         }
-        // not found!
         return null;
     }
 
