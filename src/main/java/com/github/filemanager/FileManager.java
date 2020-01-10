@@ -199,7 +199,7 @@ public class FileManager {
             flags.add(isDirectory);
 
             isFile.setEnabled(false);
-            flags.add(isFile)
+            flags.add(isFile);
             fileDetailsValues.add(flags);
 
             int count = fileDetailsLabels.getComponentCount();
