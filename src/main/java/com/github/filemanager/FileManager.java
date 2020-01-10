@@ -75,6 +75,9 @@ TODO Functionality
 <li>Add file search
 </ul>
 
+ TODO UI
+ Create new UI window (about:app)
+
 @author Andrew Thompson
 @version 2011-06-01
 */
