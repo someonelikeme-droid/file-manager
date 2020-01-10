@@ -79,7 +79,7 @@ TODO Functionality
 @version 2011-06-01
 */
 public class FileManager {
-    public static final String APP_TITLE = "FileMan";
+    public static final String APP_TITLE = "FileMan || Modified by macfan";
     private Desktop desktop;
     private FileSystemView fileSystemView;
     private File currentFile;
