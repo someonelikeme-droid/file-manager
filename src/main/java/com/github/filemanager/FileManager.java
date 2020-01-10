@@ -79,34 +79,19 @@ TODO Functionality
 @version 2011-06-01
 */
 public class FileManager {
-
-    /** Title of the application */
     public static final String APP_TITLE = "FileMan";
-    /** Used to open/edit/print files. */
     private Desktop desktop;
-    /** Provides nice icons and names for files. */
     private FileSystemView fileSystemView;
-
-    /** currently selected File. */
     private File currentFile;
-
-    /** Main GUI container */
     private JPanel gui;
-
-    /** File-system tree. Built Lazily */
     private JTree tree;
     private DefaultTreeModel treeModel;
-
-    /** Directory listing */
     private JTable table;
     private JProgressBar progressBar;
-    /** Table model for File[]. */
     private FileTableModel fileTableModel;
     private ListSelectionListener listSelectionListener;
     private boolean cellSizesSet = false;
     private int rowIconPadding = 6;
-
-    /* File controls. */
     private JButton openFile;
     private JButton printFile;
     private JButton editFile;
@@ -114,7 +99,6 @@ public class FileManager {
     private JButton newFile;
     private JButton copyFile;
     private JButton exitBtn = new JButton("Exit app");
-    /* File details. */
     private JLabel fileName;
     private JTextField path;
     private JLabel date;
@@ -124,8 +108,6 @@ public class FileManager {
     private JCheckBox executable;
     private JRadioButton isDirectory;
     private JRadioButton isFile;
-
-    /* GUI options/containers for new File/Directory creation.  Created lazily. */
     private JPanel newFilePanel;
     private JRadioButton newTypeFile;
     private JTextField name;
