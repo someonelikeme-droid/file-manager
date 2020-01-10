@@ -79,6 +79,7 @@ public class FileManager {
     private JButton deleteFile;
     private JButton newFile;
     private JButton copyFile;
+    private JButton aboutAppBtn;
     private JButton exitBtn = new JButton("Exit app");
     private JLabel fileName;
     private JTextField path;
@@ -307,6 +308,17 @@ public class FileManager {
             });
             toolBar.add(exitBtn);
             toolBar.addSeparator();
+
+            aboutAppBtn.setMnemonic('a');
+            aboutAppBtn.addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent ae) {
+                    try {
+
+                    } catch(Throwable t) {
+                        showThrowable(t);
+                    }
+                }
+            });
 
             readable = new JCheckBox("Read  ");
             readable.setMnemonic('a');
