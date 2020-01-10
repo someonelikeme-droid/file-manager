@@ -113,7 +113,7 @@ public class FileManager {
     private JButton deleteFile;
     private JButton newFile;
     private JButton copyFile;
-    private JButton exitBtn;
+    private JButton exitBtn = new JButton("Exit app");
     /* File details. */
     private JLabel fileName;
     private JTextField path;
@@ -333,7 +333,6 @@ public class FileManager {
             toolBar.add(deleteFile);
             toolBar.addSeparator();
 
-            exitBtn = new JButton("Exit app");
             exitBtn.setMnemonic('x');
             exitBtn.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent ae) {
