@@ -53,28 +53,6 @@ classes, amongst other minor things.
 
 Includes support classes FileTableModel &amp; FileTreeCellRenderer.
 
-TODO Bugs
-<ul>
-<li>Still throws occasional AIOOBEs and NPEs, so some update on
-the EDT must have been missed.
-<li>Fix keyboard focus issues - especially when functions like
-rename/delete etc. are called that update nodes &amp; file lists.
-<li>Needs more testing in general.
-
-TODO Functionality
-<li>Implement Read/Write/Execute checkboxes
-<li>Implement Copy
-<li>Extra prompt for directory delete (camickr suggestion)
-<li>Add File/Directory fields to FileTableModel
-<li>Double clicking a directory in the table, should update the tree
-<li>Move progress bar?
-<li>Add other file display modes (besides table) in CardLayout?
-<li>Menus + other cruft?
-<li>Implement history/back
-<li>Allow multiple selection
-<li>Add file search
-</ul>
-
  TODO UI
  Create new UI window (about:app)
 
