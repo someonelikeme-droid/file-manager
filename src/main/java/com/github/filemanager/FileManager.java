@@ -107,7 +107,7 @@ public class FileManager {
     private JCheckBox writable;
     private JCheckBox executable;
     private JRadioButton isDirectory;
-    private JRadioButton isFile;
+    private JRadioButton isFile = new JRadioButton("File");
     private JPanel newFilePanel;
     private JRadioButton newTypeFile;
     private JTextField name;
@@ -216,9 +216,8 @@ public class FileManager {
             isDirectory.setEnabled(false);
             flags.add(isDirectory);
 
-            isFile = new JRadioButton("File");
             isFile.setEnabled(false);
-            flags.add(isFile);
+            flags.add(isFile)
             fileDetailsValues.add(flags);
 
             int count = fileDetailsLabels.getComponentCount();
