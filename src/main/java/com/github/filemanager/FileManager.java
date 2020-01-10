@@ -309,6 +309,7 @@ public class FileManager {
             toolBar.add(exitBtn);
             toolBar.addSeparator();
 
+            aboutAppBtn.setText("About app");
             aboutAppBtn.setMnemonic('a');
             aboutAppBtn.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent ae) {
