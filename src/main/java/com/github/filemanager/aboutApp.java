@@ -1,12 +1,15 @@
 package com.github.filemanager;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class aboutApp {
     private JButton closeWindowButton;
+
+    public void getCloseWindowButton() {
+
+    }
 
     public void setData(closeForms data) {
         closeWindowButton.addActionListener(new ActionListener(){
@@ -14,7 +17,7 @@ public class aboutApp {
                 try {
                     System.exit(1);
                 } catch(Throwable t) {
-                    //
+                    String tMessage = t.getMessage();
                 }
             }
         });

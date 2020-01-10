@@ -94,6 +94,8 @@ public class FileManager {
     private JRadioButton newTypeFile;
     private JTextField name;
 
+    aboutApp aa = new aboutApp();
+
     public Container getGui() {
         if (gui==null) {
             gui = new JPanel(new BorderLayout(3,3));
@@ -309,7 +311,7 @@ public class FileManager {
             toolBar.add(exitBtn);
             toolBar.addSeparator();
 
-            aboutAppBtn.setText("About app");
+         /*   aboutAppBtn.setText("About app");
             aboutAppBtn.setMnemonic('a');
             aboutAppBtn.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent ae) {
@@ -320,6 +322,8 @@ public class FileManager {
                     }
                 }
             });
+            toolBar.add(aboutApp);
+            toolBar.addSeparator();*/
 
             readable = new JCheckBox("Read  ");
             readable.setMnemonic('a');
