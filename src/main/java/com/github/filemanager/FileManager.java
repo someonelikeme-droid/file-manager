@@ -17,6 +17,8 @@
  */
 package com.github.filemanager;
 
+import com.github.filemanager.useraddedwindows.about;
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -24,10 +26,8 @@ import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Container;
 import java.awt.Component;
-import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.*;
-import java.awt.image.*;
 
 import javax.swing.*;
 import javax.swing.border.*;
@@ -48,7 +48,8 @@ import java.nio.channels.FileChannel;
 import java.net.URL;
 
 /**
-A basic File Manager.  Requires 1.6+ for the Desktop &amp; SwingWorker
+A basic File Manager.  Requi
+ res 1.6+ for the Desktop &amp; SwingWorker
 classes, amongst other minor things.
 
 Includes support classes FileTableModel &amp; FileTreeCellRenderer.
@@ -81,6 +82,7 @@ public class FileManager {
     private JButton copyFile;
     private JButton newAboutBtm;
     private JButton exitBtn = new JButton("Exit app");
+    private JButton aboutBtn;
     private JLabel fileName;
     private JTextField path;
     private JLabel date;
@@ -93,6 +95,9 @@ public class FileManager {
     private JPanel newFilePanel;
     private JRadioButton newTypeFile;
     private JTextField name;
+
+    about ab = new about();
+
 
     public Container getGui() {
         if (gui==null) {
@@ -308,6 +313,19 @@ public class FileManager {
             });
             toolBar.add(exitBtn);
             toolBar.addSeparator();
+
+/*
+            aboutBtn.setText("About this app");
+            aboutBtn.addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent ae) {
+                    try {
+                        ab.DrawWindow();
+                    } catch(Throwable t) {
+                        showThrowable(t);
+                    }
+                }
+            });
+            toolBar.add(aboutBtn);*/
 
             readable = new JCheckBox("Read  ");
             readable.setMnemonic('a');
