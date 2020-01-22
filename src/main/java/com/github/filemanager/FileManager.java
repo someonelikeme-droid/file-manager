@@ -310,10 +310,10 @@ public class FileManager {
                     }
                 }
             });
-            toolBar.add(exitBtn);
+           toolBar.add(exitBtn);
             toolBar.addSeparator();
 
-            aboutBtm.setText("About this app");
+    /*        aboutBtm.setText("About this app");
             aboutBtm.setAutoscrolls(false);
             aboutBtm.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent ae) {
@@ -324,7 +324,8 @@ public class FileManager {
                     }
                 }
             });
-
+            toolBar.add(aboutBtm);
+*/
             readable = new JCheckBox("Read  ");
             readable.setMnemonic('a');
             //readable.setEnabled(false);
