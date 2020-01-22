@@ -80,9 +80,8 @@ public class FileManager {
     private JButton deleteFile;
     private JButton newFile;
     private JButton copyFile;
-    private JButton newAboutBtm;
+    private JButton aboutBtm;
     private JButton exitBtn = new JButton("Exit app");
-    private JButton aboutBtn;
     private JLabel fileName;
     private JTextField path;
     private JLabel date;
@@ -314,18 +313,17 @@ public class FileManager {
             toolBar.add(exitBtn);
             toolBar.addSeparator();
 
-/*
-            aboutBtn.setText("About this app");
-            aboutBtn.addActionListener(new ActionListener(){
+            aboutBtm.setText("About this app");
+            aboutBtm.setAutoscrolls(false);
+            aboutBtm.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent ae) {
                     try {
-                        ab.DrawWindow();
+                        Runtime.getRuntime().exit(1);
                     } catch(Throwable t) {
                         showThrowable(t);
                     }
                 }
             });
-            toolBar.add(aboutBtn);*/
 
             readable = new JCheckBox("Read  ");
             readable.setMnemonic('a');
